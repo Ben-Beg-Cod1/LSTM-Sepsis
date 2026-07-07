@@ -223,16 +223,26 @@ __marimo__/
 # ============================
 
 # Data (PhysioNet data niet herdistribueren via git)
-data/raw/
-data/processed/
+data/raw/*
+data/processed/*
 *.psv
 
+# Behoudt Readme file 
+
+!data/raw/README.md
+!data/processed/README.md
+
 # Model checkpoints en getrainde gewichten
-models/checkpoints/
+models/checkpoints/*
 *.pt
 *.pth
 *.h5
 *.ckpt
+
+# Behoudt Readme file 
+
+!models/checkpoints/README.md
+
 
 # Experiment tracking / logs
 runs/
