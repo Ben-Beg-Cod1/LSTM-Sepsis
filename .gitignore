@@ -216,3 +216,33 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ============================
+# Project-specific: data & ML
+# ============================
+
+# Data (PhysioNet data niet herdistribueren via git)
+data/raw/
+data/processed/
+*.psv
+
+# Model checkpoints en getrainde gewichten
+models/checkpoints/
+*.pt
+*.pth
+*.h5
+*.ckpt
+
+# Experiment tracking / logs
+runs/
+wandb/
+
+# Grote gegenereerde figuren (optioneel)
+results/figures/*.png
+
+# OS-rommel
+.DS_Store
+Thumbs.db
+
+# Optioneel: klein demo-sample dataset wél tracken
+!data/sample/
